@@ -1,9 +1,9 @@
 MasterControl::Application.routes.draw do
-  resources :controls
+  resources :control
 
-	get "controls/index"
+	get "control/index"
 
-  post "controls/make_reboot_call"
+  post "control/make_reboot_call"
 
-  post "controls/make_chef_call"
+  post "control/make_chef_call"
 end
