@@ -1,0 +1,37 @@
+// Place all the styles related to the control controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#master-header {
+	font-size:4em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	background: #99CCFF;
+}
+
+#node-name {
+	font-size:2em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	background: #C0C0C0;	
+}
+#services {
+	font-size:1em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	padding-left:60px;
+	background: #99FFFF;
+}
+
+
+button{
+color:#08233e;
+font-size:1em;
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+padding:14px;
+}

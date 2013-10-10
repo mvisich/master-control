@@ -1,0 +1,22 @@
+<div id="master-header">
+Master Control
+</div>
+<% nodes = Hash.new %>
+<% nodes["ams"] = ["haproxy", "apache", "bha"] %>
+<% nodes["cms"] = ["service1","service2","service3"] %>
+
+<% nodes.keys.each do |key| %>
+<% puts key %>
+<div id = "node-name">
+  Node: <%=key.to_s%> <%= button_to "Reboot", :action => "make_reboot_call" %> <%= button_to "Chef-Client", :action => "make_chef_call" %> 
+</div>
+<% nodes[key].each do |s| %>
+  <div id = "services">
+    <%=s.to_s%> <button>start</button> <button>stop</button> <button>restart</button>
+  </div>
+  <% end %>
+<% end %>
+
+<div id="footer">
+  Copyright ClipInteractive 2012
+</div>
