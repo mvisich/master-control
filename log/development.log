@@ -9548,3 +9548,101 @@ NoMethodError (undefined method `reboot_call' for Control(id: integer, created_a
   Rendered /Users/dynamicduo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
   Rendered /Users/dynamicduo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
   Rendered /Users/dynamicduo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/tv" for 127.0.0.1 at 2013-10-10 11:31:05 -0600
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/tv"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/mattvisich/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/mattvisich/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/mattvisich/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-10-10 11:31:08 -0600
+Served asset /rails.png - 200 OK (2ms)
+
+
+Started GET "/controls" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Processing by ControlsController#index as HTML
+  Rendered controls/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Served asset /control.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Served asset /control.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Served asset /controls.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 11:31:24 -0600
+Served asset /controls.js - 304 Not Modified (1ms)
+
+
+Started POST "/controls/make_reboot_call" for 127.0.0.1 at 2013-10-10 11:31:28 -0600
+Processing by ControlsController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 75ms
+
+NoMethodError (undefined method `reboot_call' for Control(id: integer, created_at: datetime, updated_at: datetime):Class):
+  app/controllers/controls_controller.rb:58:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/controls" for 127.0.0.1 at 2013-10-10 11:31:30 -0600
+Processing by ControlsController#index as HTML
+  Rendered controls/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)

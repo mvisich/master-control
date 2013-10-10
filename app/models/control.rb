@@ -1,13 +1,13 @@
 class Control < ActiveRecord::Base
-  attr_accessible :title
+  
 
   def reboot_call(system_name)
     # `reboot`
-    Control.first_or_create(:title => "Michelle")
+    puts "reboot"
   end
 
    def chef_call(system_name)
     # `chef-client`
-    Control.first_or_create(:title => "Matt")
+    puts "chef-client"
   end
 end
