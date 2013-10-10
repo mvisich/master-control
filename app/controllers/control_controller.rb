@@ -54,26 +54,79 @@ class ControlController < ApplicationController
   # end
 
   #POST
-  def make_reboot_call
-    @reboot_call = Control.reboot_call(params[:system_name])
+  
+  #control.reboot_call(system_name)
+
+  def make_reboot_call_linux
+    linux = Linux.new
+    reboot_call = linux.reboot_call(params[:system_name])
 
     respond_to do |format|
-      if @reboot_call.success?
-        format.json { render json: @reboot_call, notice: 'System rebooted successfully.' } 
+      if reboot_call
+        format.json { render json: reboot_call, notice: 'System rebooted successfully.' } 
       else
-        format.json { render @reboot_call.errors, status: :unprocessable_entity}
+        format.json { render json: reboot_call.errors, status: :unprocessable_entity}
       end
     end
   end
 
-    def make_chef_call
-    @chef_call = Control.chef_call(params[:system_name])
+  def make_reboot_call_windows
+    windows = Windows.new
+    reboot_call = windows.reboot_call(params[:system_name])
 
     respond_to do |format|
-      if @chef_call.success?
-        format.json { render json: @chef_call, notice: 'System rebooted successfully.' } 
+      if reboot_call
+        format.json { render json: reboot_call, notice: 'System rebooted successfully.' } 
       else
-        format.json { render @chef_call.errors, status: :unprocessable_entity}
+        format.json { render json: reboot_call.errors, status: :unprocessable_entity}
+      end
+    end
+  end
+
+  def make_service_call_linux
+    linux = Linux.new
+    service_call = linux.service_call(params[:system_name,:service_name,:command])
+    respond_to do |format|
+      if reboot_call
+        format.json { render json: service_call, notice: 'System rebooted successfully.' } 
+      else
+        format.json { render json: service_call.errors, status: :unprocessable_entity}
+      end
+    end
+  end
+
+  def make_service_call_windows
+    windows = Windows.new
+    service_call = windows.service_call(params[:system_name,:service_name,:command])
+    respond_to do |format|
+      if reboot_call
+        format.json { render json: service_call, notice: 'System rebooted successfully.' } 
+      else
+        format.json { render json: service_call.errors, status: :unprocessable_entity}
+      end
+    end
+  end
+
+  def make_chef_call_linux
+    linux = Linux.new
+    chef_call = linux.chef_call(params[:system_name])
+    respond_to do |format|
+      if chef_call
+        format.json { render json: chef_call, notice: 'System rebooted successfully.' } 
+      else
+        format.json { render chef_call.errors, status: :unprocessable_entity}
+      end
+    end
+  end
+
+  def make_chef_call_windows
+    windows = Windows.new
+    chef_call = windows.chef_call(params[:system_name])
+    respond_to do |format|
+      if chef_call
+        format.json { render json: chef_call, notice: 'System rebooted successfully.' } 
+      else
+        format.json { render chef_call.errors, status: :unprocessable_entity}
       end
     end
   end

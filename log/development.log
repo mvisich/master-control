@@ -9994,3 +9994,804 @@ Started GET "/control" for 127.0.0.1 at 2013-10-10 11:40:36 -0600
 Processing by ControlController#index as HTML
   Rendered control/index.html.erb within layouts/application (2.1ms)
 Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/control/make_chef_call" for 127.0.0.1 at 2013-10-10 11:41:31 -0600
+Processing by ControlController#make_chef_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `chef_call' for Control(id: integer, created_at: datetime, updated_at: datetime):Class):
+  app/controllers/control_controller.rb:70:in `make_chef_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 11:41:45 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Served asset /control.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Served asset /controls.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Served asset /control.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Served asset /controls.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:07 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 11:43:13 -0600
+Connecting to database specified by database.yml
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 38ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 11:43:14 -0600
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:14 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 11:43:14 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 11:43:14 -0600
+Served asset /control.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 11:43:14 -0600
+Served asset /controls.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:14 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:14 -0600
+Served asset /control.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:14 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 11:43:14 -0600
+Served asset /controls.js - 304 Not Modified (1ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 11:43:16 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 19ms
+
+NoMethodError (undefined method `reboot_call' for Control(id: integer, created_at: datetime, updated_at: datetime):Class):
+  app/controllers/control_controller.rb:58:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 11:43:24 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 11:44:16 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `reboot_call' for Control(id: integer, created_at: datetime, updated_at: datetime):Class):
+  app/controllers/control_controller.rb:58:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 13:28:53 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 13:32:50 -0600
+Connecting to database specified by database.yml
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 13:32:51 -0600
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 13:32:51 -0600
+Served asset /control.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 13:32:51 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 13:32:51 -0600
+Served asset /controls.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 13:32:51 -0600
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 13:32:51 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 13:32:51 -0600
+Served asset /control.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 13:32:51 -0600
+Served asset /controls.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 13:32:51 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 13:32:52 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `reboot_call' for Linux:Class):
+  app/controllers/control_controller.rb:61:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.1ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 13:33:00 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Connecting to database specified by database.yml
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Served asset /control.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Served asset /controls.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Served asset /jquery.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Served asset /control.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Served asset /controls.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 15:13:12 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:13:16 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `success?' for nil:NilClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:18:27 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Served asset /controls.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Served asset /control.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Served asset /control.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Served asset /controls.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 15:18:28 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:18:29 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/linux.rb:4:in `reboot_call'
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Served asset /control.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Served asset /controls.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Served asset /control.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:02 -0600
+Served asset /controls.js - 304 Not Modified (0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Served asset /controls.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Served asset /control.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Served asset /control.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Served asset /controls.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:19:03 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `success?' for nil:NilClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:19:07 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:19:31 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `success?' for nil:NilClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:19:35 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:19:40 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `success?' for nil:NilClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:19:40 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `success?' for nil:NilClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:20:13 -0600
+Connecting to database specified by database.yml
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 57ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:20:15 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `success?' for nil:NilClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:23:24 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Served asset /control.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Served asset /controls.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Served asset /control.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Served asset /controls.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:25 -0600
+Served asset /application.js - 304 Not Modified (26ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:23:26 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `success?' for nil:NilClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:23:55 -0600
+Connecting to database specified by database.yml
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Served asset /control.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Served asset /controls.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Served asset /control.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Served asset /controls.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 15:23:57 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:24:00 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 19ms
+
+NoMethodError (undefined method `success?' for nil:NilClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:31:54 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Served asset /control.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Served asset /controls.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Served asset /control.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Served asset /controls.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 15:31:55 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:31:56 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `reboot_call' for #<ControlController:0x007fbb0d043060>):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:32:49 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:32:50 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `success?' for true:TrueClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:35:49 -0600
+Connecting to database specified by database.yml
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:35:51 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `success?' for true:TrueClass):
+  app/controllers/control_controller.rb:65:in `block in make_reboot_call'
+  app/controllers/control_controller.rb:64:in `make_reboot_call'
+
+
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/mattvisich/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:38:49 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Processing by ControlController#index as HTML
+  Rendered control/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/control.css?body=1" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Served asset /control.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/controls.css?body=1" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Served asset /controls.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/control.js?body=1" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Served asset /control.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Served asset /controls.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-10 15:38:50 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started POST "/control/make_reboot_call" for 127.0.0.1 at 2013-10-10 15:38:51 -0600
+Processing by ControlController#make_reboot_call as HTML
+  Parameters: {"authenticity_token"=>"ftVo3/OS6wrbLW6igzwobezA4w7lm7REiE4EgYiswug="}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms)

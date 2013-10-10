@@ -8,7 +8,7 @@ Master Control
 <% nodes.keys.each do |key| %>
 <% puts key %>
 <div id = "node-name">
-  Node: <%=key.to_s%> <%= button_to "Reboot", :action => "make_reboot_call" %> <%= button_to "Chef-Client", :action => "make_chef_call" %> 
+  Node: <%=key.to_s%> <%= button_to "Reboot", :action => "make_reboot_call" %> <%= button_to "Chef-Client", :action => "make_chef_call" :params => key %> 
 </div>
 <% nodes[key].each do |s| %>
   <div id = "services">
